@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="Bolton University Gareth Weston GW2CRT CPU5001 - Web Programming">
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js"></script>
+        
+
+    </head>
+    <body>
+        <container>
+            
+
+             <div id="clock">  
+                <strong id="dateDisplay"> </strong>
+                <strong id="clockDisplay"> </strong>
+            </div>
+            
+
+            <div id="numCalled">
+            <h1>Number of balls Called: </h1>
+            </div>
+            <h1 id="displayCalled"> </h1>
+            
+            <div id="buttons">
+
+                <button onClick="generateNumber()"><span>Generate </span></button>
+                <button onClick="restart()"><span>Clear </span></button>
+                
+            </div>
+            
+            <section id="main">
+
+                <canvas id="largeBall" width="300" height="300">
+                    Sorry Your browser DOES NOT support HTML5 Canvas
+                </canvas>
+                    <div id="bingoNames">
+                        <strong id="name"> </strong>
+                    </div>           
+
+              <canvas id="matrixBall" width="1000" height="900">
+                    Sorry Your browser DOES NOT support HTML5 Canvas
+                </canvas>
+
+
+            </section>
+            
+            <div id="bingoNames">
+                <h1 id="name"></h1>
+            </div>
+
+            <div id="numbersCalled">
+                <h1 id="displayNumber"></h1>
+            </div>
+
+            <div>
+                <p id="calledNum"></p>
+            </div>
+
+
+
+
+
+            <aside id="drawnBalls">
+
+            </aside>
+
+            <footer></footer>
+        </container>
+    </body>
+</html>

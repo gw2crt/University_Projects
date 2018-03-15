@@ -1,0 +1,25 @@
+  .bar{
+    fill: steelblue;
+  }
+      .barout {
+          fill: orange;
+      }
+
+  .bar:hover{
+    fill: brown;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+      .title {
+  font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

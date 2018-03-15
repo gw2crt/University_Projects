@@ -1,0 +1,25 @@
+  .bar{
+    fill: steelblue;
+  }
+      .barout {
+          fill: rgba(255, 165, 0, 0.5);
+      }
+
+  .bar:hover{
+    
+  }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+      .title {
+  font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

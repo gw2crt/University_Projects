@@ -1,0 +1,156 @@
+body {
+    background-image: url("./images/bg.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%px;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    font-family: sans-serif, helvetica;
+    color#222;
+    text-align: center;
+    -webkit-transition-duration: .1s;
+    -moz-transition-duration: .1s;
+    -o-transition-duration: .1s;
+    -transition-duration: .1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 40px;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+    margin: 50px 0px 10px 0px;
+}
+
+.clockContainer {
+    position: absolute;
+    top: 8.9em;
+    right: 30px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.clock {
+    display: inline;
+}
+
+button {
+    display: block;
+    border-radius: 40px;
+    background-color: #cceeee;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#calledNum {
+    width: 100%;
+    background-color: aliceblue;
+    border-bottom: 5px solid black;
+    border-radius: 4px;
+    font-size: 30px;
+    font-family: helvetica;
+    //padding: 5px;
+}
+
+#buttons {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+}
+
+#dateDisplay {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 25px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    z-index: -1
+}
+
+#largeBall {
+    position: absolute;
+    top: 1em;
+    left: 66px;
+}
+
+#matrixBall {
+    position: absolute;
+    top: 8.3;
+    left: 23%;
+}
+
+#bingoNames {
+    position: absolute;
+    top: 7.4em;
+    left: 15px;
+    font-family: sans-serif, helvetica;
+    font-size: 45px;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#displayCalled {
+    position: absolute;
+    top: 1.5em;
+    right:0;
+    width:450px;
+    font-family: sans-serif, helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    
+}

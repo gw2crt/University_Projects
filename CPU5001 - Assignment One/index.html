@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="Bolton University Gareth Weston GW2CRT CPU5001 - Web Programming">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.thooClock.js"></script>
+</head>
+
+<body>
+    <div class="clockContainer">
+        <div id="myclock">
+        </div>
+    </div>
+    <script>
+        var intVal, myclock;
+
+        $(window).resize(function () {
+            window.location.reload()
+        });
+
+        $(document).ready(function () {
+
+            $('#myclock').thooClock({
+                size: $(document).height() / 3,
+                showNumerals: true,
+                onEverySecond: function () {}
+            });
+
+        });
+    </script>
+
+    <container id="top">
+        <div id="displayCalled"></div>
+        <div id="dateDisplay"></div>
+        <div id="calledNum"></div>
+    </container>
+
+    <container id="middle">
+
+        <div id="numCalled"></div>
+
+
+        <div id="buttons">
+
+            <button onClick="generateNumber()"><span>Call </span></button>
+            <button onClick="restart()"><span>Restart </span></button>
+            <button onClick="autoGame()"><span>Auto </span></button>
+            <button onClick="stopAuto()"><span>Stop </span></button>
+
+        </div>
+
+        <section id="main">
+
+            <canvas id="largeBall" width="310-" height="310">
+                Sorry Your browser DOES NOT support HTML5 Canvas
+            </canvas>
+
+            <canvas id="bingoName" width="350" height="100">
+                Sorry Your browser DOES NOT support HTML5 Canvas
+            </canvas>
+
+            <canvas id="matrixBall" width="1000" height="900">
+                Sorry Your browser DOES NOT support HTML5 Canvas
+            </canvas>
+        </section>
+
+
+        <div id="numbersCalled">
+            <h1 id="displayNumber"></h1>
+        </div>
+    </container>
+
+    <!--   Testing   
+    <p id="testa"></p> 
+    <p id="testb"></p> 
+    -->
+
+    <footer></footer>
+</body>
+
+</html>

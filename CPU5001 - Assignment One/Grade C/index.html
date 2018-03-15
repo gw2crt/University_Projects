@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="Bolton University Gareth Weston GW2CRT CPU5001 - Web Programming">
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js"></script>
+        
+
+    </head>
+    <body>
+        <h1> Assignment Bingo Game</h1>
+        
+        <div id="clockDisplay">         
+        </div>
+
+        <header></header>
+    
+        <section id="main">
+            <canvas id="largeBall" width="300" height="300" style="border:1px solid #000;">
+                Sorry Your browser DOES NOT support HTML5 Canvas
+            </canvas>
+           
+            
+          <canvas id="matrixBall" width="800" height="600" style="border:1px solid #000;">
+                Sorry Your browser DOES NOT support HTML5 Canvas
+            </canvas>
+             <button onClick="generateNumber()">Generate</button>
+            <button onClick="restart()">Clear</button>
+        </section>
+
+
+        <div id="bingoNames">
+            <h1 id="name"></h1>
+        </div>
+        
+        <div id="numbersCalled">
+            <h1 id="displayNumber"></h1>
+        </div>
+        
+        <div>
+            <p id="calledNum"></p>
+        </div>
+        
+        <div>
+        <h1>Number of balls Called: </h1>
+        <h1 id="displayCalled"></h1>
+        </div>
+        
+        
+
+        <aside id="drawnBalls">
+
+        </aside>
+
+        <footer></footer>
+
+    </body>
+</html>
