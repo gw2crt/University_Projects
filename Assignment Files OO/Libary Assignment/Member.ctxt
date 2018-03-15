@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=firstName\ lastName\ uniqueId
+comment0.target=Member(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+numComments=1
