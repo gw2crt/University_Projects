@@ -1,0 +1,59 @@
+#!/bin/bash
+
+######################################
+# Filename - CPU5003 UNIX Assignment #
+# Gareth Weston - GW2CRT             #
+######################################  
+
+## Welcome message
+
+echo
+echo "ADMINISTRATION OPTIONS"  
+
+## Commands to clear the screen, change the users directory to root and personally welcome the user with the $USER command
+
+sleep 2
+clear
+cd /
+echo
+echo -n "Welcome " $USER 
+echo
+
+## This shows the user the date
+  
+echo -n "Todays Date is: "
+date
+echo
+
+## This requests a respose from the users asking them which option they would like to select.
+ 
+echo "Please Selection from the following options!"  
+echo	
+	echo " 1 - System Reboot and Shutdown Options"
+	echo " 2 - User Management Options"
+	echo " 3 - Network Management Options"
+	echo " 4 - File Management Options"
+	echo " 5 - Health Reporting Options"
+	echo " q - QUIT" 	
+	echo	
+	echo -n "Please select your Option: "
+
+## Reads the users input with a read command and stores it into a variable named mselect	
+read mselect 
+
+echo "Thank You $user, Option $mselect has been chosen."
+
+## This compares the users input which is stored in mselect against the following until a match is made where it will execute the corrisponding script	
+
+	case $mselect in  
+		
+		1) ./home/gw2crt/ass_folder/reboot_management/reboot_options.sh;; 
+		2) ./home/gw2crt/ass_folder/usr_management/user_management.sh;;
+		3) ./home/gw2crt/ass_folder/network_management/network_options.sh;;
+		4) ./home/gw2crt/ass_folder/file_management/file_mgmnt.sh;;
+		5) ./home/gw2crt/ass_folder/health_report/health_rpt.sh;;
+		q) echo "GOODBYE $USER" && exit 0;;	
+		*) echo "Incorrect option, please try again."
+	esac
+
+## end of script

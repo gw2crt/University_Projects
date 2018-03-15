@@ -1,0 +1,23 @@
+Adam,
+
+The website is hosted at http://www.fakenewsnetwork.gw2crt.co.uk
+
+The search bar is hidden behind the burger menu and has keywords
+which you need to accept and then click enter again to perform the
+search.
+
+There is a link to add a story which is there to demonstrate it can be done, however
+there isnt a security session on this so it would be removed from a real life site.
+
+
+The site is fully respopnsive down to 320px and has been tested in firefox, chrome and edge.
+the contact page stores the details in a database which can be dealt with at a later date.
+
+The Modal contains an miniture avatar which when hovered over gives you the name of the author.
+The social media links in the storys link to the social media, one prints the story out and one will email the story using whatever the default
+email a link to the site with the headline using the a default email application.
+
+The stories are placed randomly so they change positions giving the user the impression of new stories. 
+
+
+
